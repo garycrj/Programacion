@@ -1,0 +1,32 @@
+// Area_de_un_triangulo.cpp : Defines the entry point for the console application.
+//
+
+#include<iostream>
+#include<cmath>
+#include "stdafx.h"
+#include"conio.h"
+
+using namespace std;
+
+
+int main() {
+	float a,b,c,p,area;
+
+	cout << "Ingrese lado a: " << endl;
+	cin >> a;
+
+	cout << "Ingrese lado b: " << endl;
+	cin >> b;
+
+	cout << "Ingrese lado c: " << endl;
+	cin >> c;
+
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+
+
+	cout << "El area es: " << area << endl;
+	getch()
+	return 0;
+}
+
