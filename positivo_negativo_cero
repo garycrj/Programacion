@@ -10,10 +10,11 @@ int main() {
 	cin >> numero;
 	if (numero<0.0)
 		cout << "El numero es negativo" << endl;
-	    if (numero==0)
+	  else 
+	     if (numero==0)
 			cout << "El numero es cero"
-	  else
+	     else
 		cout << "El numero es positivo" << endl;
-	getch():
+	getch();
 	return 0;
 }
