@@ -1,0 +1,29 @@
+// promedio.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{
+	int Na,Nb,Nc,R;
+
+	cout << "Ingrese primer numero: ";
+	cin >> Na;
+	cout << "Ingrese el segundo numero: ";
+	cin >> Nb;
+	cout << "Ingrese el tercer numero: ";
+	cin >> Nc;
+
+	R = (Na+Nb+Nc)/3;
+	
+	cout << "El promedio es: " << R <<endl;
+
+	getch();
+
+	return 0;
+}
+
