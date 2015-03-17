@@ -1,0 +1,29 @@
+// Nota_final_UPSA.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int par1,par2,par3,final,r1,r2;
+	cout << "Ingresar nota de primer parcial: ";
+		cin >> par1;
+	cout << "Ingresar nota de segundo parcial: ";
+	    cin >> par2;
+	cout << "Ingresar nota de tercer parcial: ";
+	    cin >> par3;
+	cout << "Ingresar nota del final: ";
+	    cin >> final;
+
+	r1 = (par1+par2+par3+final)/4;
+	
+	cout << "La nota final es: " << r1 << endl;
+	
+	getch();
+	return 0;
+}
+
