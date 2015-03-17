@@ -1,0 +1,59 @@
+// supermercado_caja.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+
+{
+	float cant1,prec1,cant2,prec2,cant3,prec3,cant4,prec4,cant5,prec5,r1,r2,r3,r4,r5,total;
+
+	cout << "Ingrese cantidad 1: ";
+	cin >> cant1;
+	cout << "Ingrese precio 1: ";
+	cin >> prec1;
+	cout << "Ingrese cantidad 2: ";
+	cin >> cant2;
+	cout << "Ingrese precio 2: ";
+	cin >> prec2;
+	cout << "Ingrese cantidad 3: ";
+	cin >> cant3;
+	cout << "Ingrese precio 3: ";
+	cin >> prec3;
+	cout << "Ingrese cantidad 4: ";
+	cin >> cant4;
+	cout << "Ingrese precio 4: ";
+	cin >> prec4;
+	cout << "Ingrese cantidad 5: ";
+	cin >> cant5;
+	cout << "Ingrese precio 5: ";
+	cin >> prec5;
+
+	r1 = cant1*prec1;
+	r2 = cant2*prec2;
+	r3 = cant3*prec3;
+	r4 = cant4*prec4;
+	r5 = cant5*prec5;
+
+	cout << "Producto 1 Total: " << r1 <<endl;
+	cout << "Producto 2 Total: " << r2 <<endl;
+	cout << "Producto 3 Total: " << r3 <<endl;
+	cout << "Producto 4 Total: " << r4 <<endl;
+	cout << "Producto 5 Total: " << r5 <<endl;
+
+	total = r1+r2+r3+r4+r5;
+
+	cout << "Total: " << total << endl;
+
+
+
+
+	getch();
+	return 0;
+}
+
