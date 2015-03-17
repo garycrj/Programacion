@@ -1,0 +1,35 @@
+// salario_.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+{
+	float horas, phora, n, b;
+	int nombre;
+	
+	cout << "Ingresar nombre: ";
+	cin >> nombre;
+	cout << "Ingrese horas trabajadas: ";
+	cin >> horas;
+	cout << "Ingrese precio por hora trabajada: ";
+	cin >> phora;
+
+	b = (horas*phora);
+	n = (b * 87) / 100;
+
+	endl;
+
+	cout << nombre << endl;
+	cout << "Salario neto: " << n << endl;
+	cout << "Salario bruto; " << b << endl;
+	
+    _getch();
+    return 0;
+}
+
