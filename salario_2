@@ -18,8 +18,8 @@ int main()
 	
 	if (s>(sm*2))
 		{
-		r=(s*89)/100;
-		cout << "El salario neto pagando impuestos es: " << r <<endl;
+		r=(s*11)/100;
+		cout << "El impuesto a pagar por el salario es: " << r <<endl;
 	    }
 	      else
 		  {
