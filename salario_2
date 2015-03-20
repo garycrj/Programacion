@@ -1,0 +1,33 @@
+// salario.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int sm,s,r;
+	
+	cout << "Ingrese el salario: ";
+	cin >> s;
+	cout << "Ingrese el salario minimo: ";
+	cin >> sm;
+	
+	if (s>(sm*2))
+		{
+		r=(s*89)/100;
+		cout << "El salario neto pagando impuestos es: " << r <<endl;
+	    }
+	      else
+		  {
+		  cout << "El salario sin pagar impuestos es: " << s <<endl;
+	      }
+	
+
+	getch();
+	return 0;
+}
+
