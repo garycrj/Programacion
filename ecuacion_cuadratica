@@ -1,0 +1,59 @@
+// ecuacion_cuadratica.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>  
+#include "conio.h"
+#include <math.h>  
+
+using namespace std;  
+
+int main()
+{
+		float a, b, c;
+		char z;
+
+		do{
+			cout << "Ingresa coeficiente cuadratico: ";
+			cin >> a;
+			if (!cin){
+				cout << "a no es un numero: ";
+				break;
+			}
+			cout << "Ingresa coeficiente lineal: ";
+			cin >> b;
+			if (!cin){
+				cout << "b no es un numero" << endl;
+				break;
+			}
+			cout << "Ingresa constante: ";
+			cin >> c;
+			if (!cin){
+				cout << "c no es un numero" << endl;
+				break;
+			}
+
+			double operacion = pow(b, 2) - 4 * a*c;
+			if (a != 0){
+				if (operacion < 0){
+					cout << "Tiene raices imaginarias";
+				}
+				else{
+					double x1 = (-b + sqrt(operacion)) / (2 * a);
+					double x2 = (-b - sqrt(operacion)) / (2 * a);
+					cout << "Calculo de las raices de una cuadratica " << " a = " << a << ",  b = " << b << ",  c =" << c << endl;
+					cout << "X1 = " << x1 << " X2 = " << x2;
+				}
+			}
+			else{
+				cout << "El coeficiente cuadratico debe ser diferente de 0";
+			}
+			cout << "\n Quieres hacer otra ecuacion?";
+			cout << "\n presiona 'Y' para seguir 'N' para salir: ";
+			cin >> z;
+			cout << "\n";
+		} while (z == 'y' || z == 'Y');
+	
+	_getch();
+	return 0;
+}
