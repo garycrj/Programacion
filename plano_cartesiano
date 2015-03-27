@@ -1,0 +1,59 @@
+// plano_cartesiano_1.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	float x, y;
+	char z;
+
+	do{
+
+		cout << "Ingrese el valor de x: ";
+		cin >> x;
+		if(!cin){
+			cout << "x no es un numero";
+				break;
+		}
+		cout << "Ingrese el valor de y: ";
+		cin >> y;
+		if (!cin){
+			cout << "y no es un numero";
+				break;
+		}
+		if (x>0 && y>0) {
+			cout << "El punto se encuentran en el cuadrante I" << endl;
+		}
+		if (x<0 && y>0) {
+			cout << "El punto se encuentran en el cuadrante II" << endl;
+		}
+		if (x<0 && y<0) {
+			cout << "El punto se encuentran en el cuadrante III" << endl;
+		}
+		if (x>0 && y<0) {
+			cout << "El punto se encuentran en el cuadrante IV" << endl;
+		}
+		if (x == 0 && y == 0) {
+			cout << "El punto se encuentran en el origen" << endl;
+		}
+		if ((x == 0 && y != 0) || (x != 0 && y == 0)) {
+			cout << "El punto no esta en ningun cuadrante" << endl;
+		}
+		{
+			cout << "\n Quieres hacer otra ecuacion?";
+			cout << "\n presiona 'Y' para seguir 'N' para salir: ";
+			cin >> z;
+			cout << "\n";
+		}
+
+	} while (z == 'y' || z == 'Y');
+ 
+	
+	_getch();
+	return 0;
+}
