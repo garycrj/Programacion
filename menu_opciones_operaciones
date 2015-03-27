@@ -1,0 +1,55 @@
+// menu_opciones_operaciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	float a, b, r;
+	char opcion, z;
+	do{
+		cout << "Ingresa el primer numero: ";
+		cin >> a;
+		    if(!cin){
+				cout << "No es un numero";
+				break;
+			}
+		cout << "Ingrese el segundo numero: ";
+		cin >> b;
+		    if(!cin){
+				cout << "No es un numero";
+			    break;
+			}
+	    cout << "Selecione la operacion que desea realizar" <<endl;
+		cout << "1.- Suma " << endl;
+		cout << "2.- Resta " << endl;
+		cout << "3.- Producto " << endl;
+		cout << "4.- Division " << endl;
+		cin >> opcion;
+         switch (opcion){
+	     case 1: r = a + b; break;
+	     case 2: r = a – b; break;
+   	     case 3: r = a * b; break;
+	     case 4: r = a / b; break;
+	     default: cout << "Opcion invalida" << endl;
+         }
+         cout << "El resultado es " << r << endl;
+
+
+		cout << "El resultado es: " << r << endl;
+		cout << "\n Quieres hacer otra operacion?";
+        cout << "\n presiona 'Y' para seguir 'N' para salir: ";
+        cin >> z;
+        cout << "\n";
+		
+		}while ( z == 'y' || z == 'Y');
+
+	getch();
+	return 0;
+	
+}
+
