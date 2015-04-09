@@ -1,0 +1,38 @@
+// cronometro.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+#include <windows.h> // Libreria de windows para usar system(PAUSE) y Sleep()
+
+using namespace std;
+
+int main(){
+	int h, m, s, ml; // Declaramos variables hora, minuto, segundo, milisegundo //
+	
+	
+	
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++) // Hacemos otros for que hasta los 60 minutos no haya una hora //
+		{
+			for (s = 0; s < 60; s++) // Hacemos otro for que hasta los 60 segundos no haya un minuto //
+			{
+				for (ml = 0; ml < 100;)
+
+				{
+
+					cout << "Cronometro:"; // Escribimos cronometro en la pizarra //
+					cout << h << ":" << m << ":" << s << ":" << ml << "\n"; // Añadimos las variables de el cronometro //
+					Sleep(4); // Sleep cada 5 milisegundos actualice en tiempo real seria 1 milisegundo //  
+					ml++;// Para que cada milisegundo summe 1 //
+					system("cls"); // Añadimos un cls que cuando llege a 24 horas se esborre todo lo que hay escrito //
+				
+				}
+			}
+		}
+	}
+	cout << "Ha llegado a las 24 horas"; // Despues de cerrar todos los bucles añadimos otro texto en la pizarra de que hemos llegado a las 24 horas //
+	system("PAUSE>NUL"); // Pausamos el proyecto y cuando pulsemos una tecla se cerrara //
+}
