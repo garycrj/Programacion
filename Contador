@@ -1,0 +1,27 @@
+// Contador.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int cnt = 0, ac = 0, var = 1; // Declaramos Variables asignamos valor a cada variable el contador empezara desde 0 //
+	while (var != 0) //Mientras var (valor del dato) sea diferente a 0 seguir // 
+	{
+		cout << "ingrese valor del dato: " << endl; // Pedimos el valor del dato que deseamos contar y acumular //
+		cin >> var; // Lo asignamos a la variable var // 
+		cnt++; // Empieza a sumar + 1 //
+		cout << "Datos introducidos: " << cnt << endl;// Mostramos el contador //
+				ac = var + ac; // Funcion para el acumulador //
+		cout << "Total: " << ac << endl; // Mostramos el total //
+	}
+	cout << "**FIN**" << endl; // Si se introduce 0 en el valor del dato muestra ***FIN*** //
+	_getch(); 
+	return 0;
+}
+
+
